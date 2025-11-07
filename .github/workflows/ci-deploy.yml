@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 env:
-  BUCKET_NAME: ai-static-site-2025   # replace with your bucket or use repo variable
+  BUCKET_NAME: ai-static-site-2025-sathish  # replace with your bucket or use repo variable
   AWS_REGION: us-east-1
 
 jobs:

@@ -34,7 +34,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::704387187640:role/GitHubS3DeployRole
-          aws-region: ${{ AWS_REGION }}
+          aws-region: ${{AWS_REGION}}
 
       - name: Deploy to S3
-        run: aws s3 sync site/ s3://${{ BUCKET_NAME }} --delete
+        run: aws s3 sync site/ s3://${{BUCKET_NAME}} --delete
